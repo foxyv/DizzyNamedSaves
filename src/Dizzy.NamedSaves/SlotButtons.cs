@@ -305,10 +305,6 @@ namespace Dizzy.NamedSaves
                 + u * (halfHeight - pad - half)
                 + outward * depth;
 
-            Plugin.Log.LogInfo("Badge on slot " + slot + ": button " + (2f * halfWidth).ToString("0.###") + " x " + (2f * halfHeight).ToString("0.###")
-                + ", depth " + halfDepth.ToString("0.###") + ", label depth " + labelDepth.ToString("0.###")
-                + ", badge side " + (2f * half).ToString("0.###") + ", layer " + button.gameObject.layer + ", shader " + shader.name + ".");
-
             var badge = new GameObject("NamedSaves badge");
             badge.layer = button.gameObject.layer;
             badge.transform.SetParent(t, false);
